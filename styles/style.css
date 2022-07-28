@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #3fdaad, #3fdafd);
+  color: #0044ff;
+  text-align: center;
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.game-container {
+  width: 900px;
+  height: 900px;
+  margin: auto;
+}
+
+.game-container > .rows:nth-of-type(even) > .cells:nth-of-type(even) {
+  background-color: #77dfff;
+}
+
+.game-container > .rows:nth-of-type(even) > .cells:nth-of-type(odd) {
+  background-color: #00c3ff;
+}
+
+.game-container > .rows:nth-of-type(odd) > .cells:nth-of-type(even) {
+  background-color: #00c3ff;
+}
+
+.game-container > .rows:nth-of-type(odd) > .cells:nth-of-type(odd) {
+  background-color: #77dfff;
+}
+
+.rows {
+  width: inherit;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cells {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  font-size: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cells:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+/*# sourceMappingURL=style.css.map */
